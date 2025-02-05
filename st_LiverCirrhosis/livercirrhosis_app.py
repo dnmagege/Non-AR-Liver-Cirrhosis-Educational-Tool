@@ -25,8 +25,8 @@ content = {
 
         Whether you are a patient, student, or healthcare professional, this tool is designed to help you better understand liver health and associated conditions. Explore the pages to learn more!
         """,
-        "video": "media/liver-cirrhosis.mp4",  
-        "audio": "st_LiverCirrhosis/audio/welcome.mp3",
+        "video": "st_LiverCirrhosis/media/liver-cirrhosis.mp4",  
+        "audio": "st_LiverCirrhosis/st_LiverCirrhosis/audio/welcome.mp3",
          
 
     },
@@ -51,7 +51,7 @@ content = {
         style="width: 100%; height: 500px;">
         </iframe>
         """,  
-        "audio": "audio/slide1.mp3"  
+        "audio": "st_LiverCirrhosis/audio/slide1.mp3"  
     },
     "Liver Cirrhosis": {
         "description": """
@@ -74,7 +74,7 @@ content = {
         style="width: 100%; height: 500px;">
         </iframe>
         """,  
-        "audio": "audio/slide2.mp3"  
+        "audio": "st_LiverCirrhosis/audio/slide2.mp3"  
     },
     "Symptoms of Liver Cirrhosis and Complications": {
         "description": """
@@ -97,8 +97,8 @@ content = {
 
         8. Predisposition to Infections: The body is more prone to infections due to a weak response from the immune system.
         """,
-        "image": "media/symptoms.jpg" ,   
-        "audio": "audio/slide3.mp3"  
+        "image": "st_LiverCirrhosis/media/symptoms.jpg" ,   
+        "audio": "st_LiverCirrhosis/audio/slide3.mp3"  
     },
     "Stages of Cirrhosis": {
         "description": """
@@ -121,7 +121,7 @@ content = {
         style="width: 100%; height: 500px;">
         </iframe>
         """,  
-        "audio": "audio/slide4.mp3"  
+        "audio": "st_LiverCirrhosis/audio/slide4.mp3"  
     },
 
     "Fatty Liver": {
@@ -151,7 +151,7 @@ content = {
         style="width: 100%; height: 500px;">
         </iframe>
         """,  
-        "audio": "audio/slide5.mp3"  
+        "audio": "st_LiverCirrhosis/audio/slide5.mp3"  
     },
     "Fibrosis Liver": {
         "description": """
@@ -177,7 +177,7 @@ content = {
         style="width: 100%; height: 500px;">
         </iframe>
         """,  
-        "audio": "audio/slide6.mp3"   
+        "audio": "st_LiverCirrhosis/audio/slide6.mp3"   
     },
     "Causes and Risk Factors": {
         "description": """
@@ -192,8 +192,8 @@ content = {
 
         5. Genetics: Some conditions, such as hemochromatosis, which leads to a buildup of iron, and Wilson's disease, caused by copper accumulation, run in the family and affect the liver.
         """,
-        "image": "media/Cirrhosis-risk-factors.jpeg",
-        "audio": "audio/slide7.mp3" 
+        "image": "st_LiverCirrhosis/media/Cirrhosis-risk-factors.jpeg",
+        "audio": "st_LiverCirrhosis/audio/slide7.mp3" 
     },
     "Conventional Treatments": {
         "description": """
@@ -206,8 +206,8 @@ content = {
 
         4. Liver transplant: This may be the only option when the liver is too damaged to function.
         """,
-        "image": "media/liverdiagram.png",  
-        "audio": "audio/slide7.mp3" 
+        "image": "st_LiverCirrhosis/media/liverdiagram.png",  
+        "audio": "st_LiverCirrhosis/audio/slide7.mp3" 
     },
     "Coping with Cirrhosis Naturally": {
         "description": """
@@ -230,8 +230,8 @@ content = {
 
         8. Find support: Whether it’s a therapist, a support group, or a close friend, having someone to lean on can make a big difference.
         """,
-        "image": "media/liver.jpg",  
-        "audio": "audio/slide8.mp3" 
+        "image": "st_LiverCirrhosis/media/liver.jpg",  
+        "audio": "st_LiverCirrhosis/audio/slide8.mp3" 
     },
     "Liver Cirrhosis Chatbot": {},
     
@@ -251,7 +251,7 @@ if page != "Liver Cirrhosis Chatbot":
     if "audio" in content[page]:
         audio_path = content[page]["audio"]
         if Path(audio_path).exists():
-            st.audio(text_to_speech(audio_path), format="audio/mp3")
+            st.audio(text_to_speech(audio_path), format="st_LiverCirrhosis/audio/mp3")
         else:
             st.error(f"Audio file not found: {audio_path}")
 
@@ -261,7 +261,7 @@ if page != "Liver Cirrhosis Chatbot":
     #     if Path(audio_path).exists():
     #         st.components.v1.html(f"""
     #         <audio autoplay>
-    #             <source src="{audio_path}" type="audio/mpeg">
+    #             <source src="{audio_path}" type="st_LiverCirrhosis/audio/mpeg">
     #             Your browser does not support the audio element.
     #         </audio>
     #         """, height=50)
