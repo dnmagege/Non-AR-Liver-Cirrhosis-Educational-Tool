@@ -13,6 +13,7 @@ def text_to_speech(file_path):
 # Set your OpenAI API key
 openai.api_key = "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"
 
+
 # Page Content with Embeds for 3D Models, 2D Images, and Videos
 content = {
 
