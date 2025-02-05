@@ -25,7 +25,7 @@ content = {
 
         Whether you are a patient, student, or healthcare professional, this tool is designed to help you better understand liver health and associated conditions. Explore the pages to learn more!
         """,
-        "video": "st_LiverCirrhosis/media/liver-cirrhosis.mp4",  
+        "video": "st_LiverCirrhosis/media/liver-cirrhosis.mp4",
         "audio": "st_LiverCirrhosis/audio/welcome.mp3",
          
 
